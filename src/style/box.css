@@ -1,5 +1,7 @@
 .box {
-    width:50vw;
-    height:50vh;
-    border: 1px solid black;
+  width: 50vw;
+  height: 50vh;
+  border: 1px solid black;
+  position: absolute;
+  left: 25vw;
 }
