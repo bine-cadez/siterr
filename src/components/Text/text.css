@@ -1,0 +1,5 @@
+.textBox:hover {
+  background-color: beige;
+  transition: 0.6;
+  cursor: crosshair;
+}

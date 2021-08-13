@@ -1,5 +1,11 @@
 .sidebar {
-    position: absolute;
-    left: 0;
-    top: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.sidebar li {
+  font-size: 2vw;
+}
+.sidebar h1 {
+  font-size: 3vw;
 }
