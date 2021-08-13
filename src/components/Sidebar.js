@@ -1,20 +1,29 @@
-import React from "react";
-import "../style/sidebar.css"
+import React, { useState } from "react";
+import "../style/sidebar.css";
+import { InputBox } from "./InputBox.js";
+import "../style/inputbox.css";
 
 const websiteElements = ["text", "shapes", "images"];
-const list = websiteElements.map((element) => {
-   return <li>{element}</li>;
-  });
-console.log(websiteElements)
+export const Sidebar = () => {
+  const [isHidden, setIsHidden] = useState(true);
 
-export default class Sidebar extends React.Component {
-  
-  render() {
-    return (
-      <div className = "sidebar">
-        <h1>website elements</h1>
-        <ul>{list}</ul>
-      </div>
-    );
-  }
-}
+  const onClick = () => {
+    setIsHidden((prev) => !prev);
+  };
+
+  return (
+    <div className="sidebar">
+      <h1>website elements</h1>
+      <ul>
+        {websiteElements.map((element) => {
+          return (
+            <li key={element}>
+              <button onClick={onClick}>{element}</button>
+            </li>
+          );
+        })}
+      </ul>
+      <InputBox isHidden={isHidden}></InputBox>
+    </div>
+  );
+};

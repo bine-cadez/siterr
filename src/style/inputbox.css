@@ -1,0 +1,7 @@
+.inputBox textarea {
+  height: 10vh;
+  width: 50vw;
+  top: 75vh;
+  left: 25vw;
+  resize: none;
+}
