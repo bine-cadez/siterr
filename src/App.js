@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "./components/Header.js";
-import { Sidebar } from "./components/Sidebar.js";
+import Header from "./components/Header/Header.js";
+import { Sidebar } from "./components/Sidebar/Sidebar.js";
 
 function App() {
   return (
