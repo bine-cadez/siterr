@@ -3,4 +3,10 @@
   height: 50vh;
   border: 1px solid black;
   margin-left: 25vw;
+  position: relative;
+}
+.box .heading {
+  margin-top: -5vh;
+  position: relative;
+  text-align: center;
 }

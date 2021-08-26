@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "../style/sidebar.css";
-import { InputBox } from "./InputBox.js";
-import "../style/inputbox.css";
+import "./sidebar.css";
+import { InputBox } from "../InputBox/InputBox.js";
+import "../InputBox/inputbox.css";
 
 const websiteElements = ["text", "shapes", "images"];
 export const Sidebar = () => {
